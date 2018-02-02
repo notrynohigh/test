@@ -1,0 +1,30 @@
+[user]
+	name = likailong
+	email = likailong@icomwell.com
+[gui]
+	tabsize = 4
+[merge]
+	tool = C:\\Program Files (x86)\\Beyond Compare 4\\BCompare.exe
+[color]
+	ui = true
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	dif = difftool
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[diff]
+	tool = bc4
+[difftool]
+	prompt = false
+[difftool "bc4"]
+	cmd = "\"C:/Program Files (x86)/Beyond Compare 4/BCompare.exe\" \"$LOCAL\" \"$REMOTE\""
+	
+[merge]
+	tool = bc4
+[mergetool]
+	prompt = false
+[mergetool "bc4"]
+	cmd = "\"C:/Program Files (x86)/Beyond Compare 4/BCompare.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
